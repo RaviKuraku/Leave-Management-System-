@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name>m-t</class_name>
+        <container_class_name/>
+        <name>LMS Login - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="lms_login">66b8d7fd9799f110fba7b627f053af54</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>surya@istreetlabs.com</sys_created_by>
+        <sys_created_on>2023-09-16 13:51:17</sys_created_on>
+        <sys_id>eeb8533197d9f110fba7b627f053af0e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>LMS Login - Container 1</sys_name>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name>sp_container_eeb8533197d9f110fba7b627f053af0e</sys_update_name>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-16 13:51:32</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

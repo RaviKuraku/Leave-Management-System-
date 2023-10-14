@@ -1,0 +1,1704 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5635577000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>isllms_flow</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Request Record","reference":"x_812225_lms_leave_request","reference_display":"Leave Request","type":"reference","base_type":"reference","attributes":{}},{"name":"dcf2f80c-e2a4-4a5f-bd33-753b094af602.record.requested_by.manager","label":"1➛Leave Request Record➛Requested By➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"ba56a48e-500d-415b-b441-f43ee181a011.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>835c1f0397007110fba7b627f053af94</master_snapshot>
+        <name>ISLLMS Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>406c5f0397007110fba7b627f053af65</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 07:35:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de96138397cc3110fba7b627f053afe2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>ISLLMS Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name>sys_hub_flow_de96138397cc3110fba7b627f053afe2</sys_update_name>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=de96138397cc3110fba7b627f053afe2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=de96138397cc3110fba7b627f053afe2"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_812225_lms_leave_request">durationISNOTEMPTY<item endquery="false" field="duration" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>406c5f0397007110fba7b627f053af65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:08</sys_updated_on>
+        <table>x_812225_lms_leave_request</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>de96138397cc3110fba7b627f053afe2</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>surya@istreetlabs.com</sys_created_by>
+        <sys_created_on>2023-09-23 13:02:14</sys_created_on>
+        <sys_id>98a093049761b110fba7b627f053af98</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <trigger display_value="">406c5f0397007110fba7b627f053af65</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=de96138397cc3110fba7b627f053afe2^sys_idNOT IN98a093049761b110fba7b627f053af98"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=de96138397cc3110fba7b627f053afe2^sys_idNOT INa93c1b0397007110fba7b627f053af2a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>a93c1b0397007110fba7b627f053af2a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a93c1b0397007110fba7b627f053af2a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a93c1b0397007110fba7b627f053af2a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>253c1b0397007110fba7b627f053af2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a93c1b0397007110fba7b627f053af2a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>e93c1b0397007110fba7b627f053af2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <value>durationISNOTEMPTY</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=de96138397cc3110fba7b627f053afe2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=de96138397cc3110fba7b627f053afe2^sys_idNOT IN5e96138397cc3110fba7b627f053afe4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>de96138397cc3110fba7b627f053afe2</id>
+        <name>ISLLMS Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 07:35:53</sys_created_on>
+        <sys_id>5e96138397cc3110fba7b627f053afe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 07:35:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5e96138397cc3110fba7b627f053afe4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=de96138397cc3110fba7b627f053afe2^sys_idNOT IN913c1b0397007110fba7b627f053af1f,e53c1b0397007110fba7b627f053af26"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</model>
+        <model_id>de96138397cc3110fba7b627f053afe2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_de96138397cc3110fba7b627f053afe2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:24</sys_created_on>
+        <sys_id>913c1b0397007110fba7b627f053af1f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=913c1b0397007110fba7b627f053af1f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</model>
+        <model_id>de96138397cc3110fba7b627f053afe2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_de96138397cc3110fba7b627f053afe2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>e53c1b0397007110fba7b627f053af26</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e53c1b0397007110fba7b627f053af26"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=de96138397cc3110fba7b627f053afe2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=de96138397cc3110fba7b627f053afe2"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=de96138397cc3110fba7b627f053afe2^sys_idNOT IN393c1b0397007110fba7b627f053af46,3d3c1b0397007110fba7b627f053af52,ad3c1b0397007110fba7b627f053af3d,b53c1b0397007110fba7b627f053af68"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>393c1b0397007110fba7b627f053af46</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:47</sys_updated_on>
+        <ui_id>ba56a48e-500d-415b-b441-f43ee181a011</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=393c1b0397007110fba7b627f053af46"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>393c1b0397007110fba7b627f053af46</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>793c1b0397007110fba7b627f053af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>393c1b0397007110fba7b627f053af46</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>b53c1b0397007110fba7b627f053af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>393c1b0397007110fba7b627f053af46</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>f13c1b0397007110fba7b627f053af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=393c1b0397007110fba7b627f053af46"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>393c1b0397007110fba7b627f053af46</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>bd3c1b0397007110fba7b627f053af48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{dcf2f80c-e2a4-4a5f-bd33-753b094af602.record.requested_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>393c1b0397007110fba7b627f053af46</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>753c1b0397007110fba7b627f053af48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>393c1b0397007110fba7b627f053af46</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>f93c1b0397007110fba7b627f053af48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>393c1b0397007110fba7b627f053af46</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>393c1b0397007110fba7b627f053af48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>393c1b0397007110fba7b627f053af46</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>713c1b0397007110fba7b627f053af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=393c1b0397007110fba7b627f053af46"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=393c1b0397007110fba7b627f053af46"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</flow>
+        <order>4</order>
+        <parent_ui_id>3e94d8e2-9f49-463e-9ba4-b8254a894e32</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>3d3c1b0397007110fba7b627f053af52</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:47</sys_updated_on>
+        <ui_id>8da0a0ce-1360-40ef-9b6d-9830df7868a7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3d3c1b0397007110fba7b627f053af52"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3d3c1b0397007110fba7b627f053af52</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>3d3c1b0397007110fba7b627f053af60</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:01:57</sys_updated_on>
+        <value>status=Closed</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3d3c1b0397007110fba7b627f053af52</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>fd3c1b0397007110fba7b627f053af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3d3c1b0397007110fba7b627f053af52"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3d3c1b0397007110fba7b627f053af52</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>b93c1b0397007110fba7b627f053af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3d3c1b0397007110fba7b627f053af52</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>353c1b0397007110fba7b627f053af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3d3c1b0397007110fba7b627f053af52</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>f53c1b0397007110fba7b627f053af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3d3c1b0397007110fba7b627f053af52"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d3c1b0397007110fba7b627f053af52"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>ad3c1b0397007110fba7b627f053af3d</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:47</sys_updated_on>
+        <ui_id>dcf2f80c-e2a4-4a5f-bd33-753b094af602</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ad3c1b0397007110fba7b627f053af3d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ad3c1b0397007110fba7b627f053af3d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>613c1b0397007110fba7b627f053af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ad3c1b0397007110fba7b627f053af3d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>ad3c1b0397007110fba7b627f053af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <value>status=submitted^approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ad3c1b0397007110fba7b627f053af3d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ad3c1b0397007110fba7b627f053af3d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>2d3c1b0397007110fba7b627f053af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ad3c1b0397007110fba7b627f053af3d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>613c1b0397007110fba7b627f053af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ad3c1b0397007110fba7b627f053af3d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>693c1b0397007110fba7b627f053af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ad3c1b0397007110fba7b627f053af3d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ad3c1b0397007110fba7b627f053af3d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</flow>
+        <order>6</order>
+        <parent_ui_id>e989d277-35f2-4884-8ced-eddd7d253b0d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>b53c1b0397007110fba7b627f053af68</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:47</sys_updated_on>
+        <ui_id>c4d2cf87-5f70-43d4-a3e8-c07b8af83fd5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b53c1b0397007110fba7b627f053af68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b53c1b0397007110fba7b627f053af68</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>b13c1b0397007110fba7b627f053af6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b53c1b0397007110fba7b627f053af68</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>fd3c1b0397007110fba7b627f053af69</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>ravi@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-19 12:09:37</sys_updated_on>
+        <value>status=cancelled</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b53c1b0397007110fba7b627f053af68"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b53c1b0397007110fba7b627f053af68</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>7d3c1b0397007110fba7b627f053af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b53c1b0397007110fba7b627f053af68</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>f53c1b0397007110fba7b627f053af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b53c1b0397007110fba7b627f053af68</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>b93c1b0397007110fba7b627f053af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b53c1b0397007110fba7b627f053af68"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b53c1b0397007110fba7b627f053af68"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=de96138397cc3110fba7b627f053afe2"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=de96138397cc3110fba7b627f053afe2^sys_idNOT IN393c1b0397007110fba7b627f053af4a,b53c1b0397007110fba7b627f053af61"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fd3c1b0397007110fba7b627f053af49</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>393c1b0397007110fba7b627f053af4a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <ui_id>3e94d8e2-9f49-463e-9ba4-b8254a894e32</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=393c1b0397007110fba7b627f053af4a"/>
+    <sys_element_mapping action="delete_multiple" query="id=393c1b0397007110fba7b627f053af4a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>393c1b0397007110fba7b627f053af4a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>f53c1b0397007110fba7b627f053af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ba56a48e-500d-415b-b441-f43ee181a011.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=393c1b0397007110fba7b627f053af4a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=393c1b0397007110fba7b627f053af4a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f13c1b0397007110fba7b627f053af61</block>
+        <comment/>
+        <connected_to>3e94d8e2-9f49-463e-9ba4-b8254a894e32</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>b53c1b0397007110fba7b627f053af61</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <ui_id>e989d277-35f2-4884-8ced-eddd7d253b0d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b53c1b0397007110fba7b627f053af61"/>
+    <sys_element_mapping action="delete_multiple" query="id=b53c1b0397007110fba7b627f053af61"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b53c1b0397007110fba7b627f053af61</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:26</sys_created_on>
+        <sys_id>f13c1b0397007110fba7b627f053af64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ba56a48e-500d-415b-b441-f43ee181a011.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b53c1b0397007110fba7b627f053af61"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b53c1b0397007110fba7b627f053af61"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=de96138397cc3110fba7b627f053afe2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=de96138397cc3110fba7b627f053afe2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_de96138397cc3110fba7b627f053afe2^sys_idNOT IN293c1b0397007110fba7b627f053af28,a53c1b0397007110fba7b627f053af25"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_de96138397cc3110fba7b627f053afe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>293c1b0397007110fba7b627f053af28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_de96138397cc3110fba7b627f053afe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:00:25</sys_created_on>
+        <sys_id>a53c1b0397007110fba7b627f053af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:00:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_de96138397cc3110fba7b627f053afe2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_de96138397cc3110fba7b627f053afe2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_de96138397cc3110fba7b627f053afe2"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>isllms_flow</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Request Record","reference":"x_812225_lms_leave_request","reference_display":"Leave Request","type":"reference","base_type":"reference","attributes":{}},{"name":"dcf2f80c-e2a4-4a5f-bd33-753b094af602.record.requested_by.manager","label":"1➛Leave Request Record➛Requested By➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"ba56a48e-500d-415b-b441-f43ee181a011.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>ISLLMS Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="ISLLMS Flow">de96138397cc3110fba7b627f053afe2</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>835c1f0397007110fba7b627f053af94</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=835c1f0397007110fba7b627f053af94"/>
+    <sys_variable_value action="delete_multiple" query="document_key=835c1f0397007110fba7b627f053af94"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=835c1f0397007110fba7b627f053af94^sys_idNOT IN675c5f0397007110fba7b627f053af04"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>675c5f0397007110fba7b627f053af04</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=675c5f0397007110fba7b627f053af04"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>675c5f0397007110fba7b627f053af04</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>6f5c5f0397007110fba7b627f053af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>675c5f0397007110fba7b627f053af04</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>ab5c5f0397007110fba7b627f053af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <value>durationISNOTEMPTY</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=835c1f0397007110fba7b627f053af94"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=835c1f0397007110fba7b627f053af94^sys_idNOT IN835c1f0397007110fba7b627f053af95"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>835c1f0397007110fba7b627f053af94</id>
+        <name>ISLLMS Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:03</sys_created_on>
+        <sys_id>835c1f0397007110fba7b627f053af95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=835c1f0397007110fba7b627f053af95"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=835c1f0397007110fba7b627f053af94^sys_idNOT IN0b5c1f0397007110fba7b627f053af96,8f5c1f0397007110fba7b627f053afbb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</model>
+        <model_id>835c1f0397007110fba7b627f053af94</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_835c1f0397007110fba7b627f053af94</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:03</sys_created_on>
+        <sys_id>0b5c1f0397007110fba7b627f053af96</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0b5c1f0397007110fba7b627f053af96"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</model>
+        <model_id>835c1f0397007110fba7b627f053af94</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_835c1f0397007110fba7b627f053af94</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:04</sys_created_on>
+        <sys_id>8f5c1f0397007110fba7b627f053afbb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8f5c1f0397007110fba7b627f053afbb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=835c1f0397007110fba7b627f053af94"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=835c1f0397007110fba7b627f053af94"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=835c1f0397007110fba7b627f053af94^sys_idNOT IN135c1f0397007110fba7b627f053afec,675c1f0397007110fba7b627f053affc,675c5f0397007110fba7b627f053af02,a75c1f0397007110fba7b627f053aff5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>135c1f0397007110fba7b627f053afec</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <ui_id>dcf2f80c-e2a4-4a5f-bd33-753b094af602</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=135c1f0397007110fba7b627f053afec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>135c1f0397007110fba7b627f053afec</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>1f5c1f0397007110fba7b627f053afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:05</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>135c1f0397007110fba7b627f053afec</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>5b5c1f0397007110fba7b627f053afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:05</sys_updated_on>
+        <value>status=submitted^approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=135c1f0397007110fba7b627f053afec"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>135c1f0397007110fba7b627f053afec</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>d75c1f0397007110fba7b627f053afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>135c1f0397007110fba7b627f053afec</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>535c1f0397007110fba7b627f053afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>135c1f0397007110fba7b627f053afec</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>175c1f0397007110fba7b627f053afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=135c1f0397007110fba7b627f053afec"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=135c1f0397007110fba7b627f053afec"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</flow>
+        <order>4</order>
+        <parent_ui_id>3e94d8e2-9f49-463e-9ba4-b8254a894e32</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>675c1f0397007110fba7b627f053affc</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <ui_id>8da0a0ce-1360-40ef-9b6d-9830df7868a7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=675c1f0397007110fba7b627f053affc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>675c1f0397007110fba7b627f053affc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>635c1f0397007110fba7b627f053affe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>675c1f0397007110fba7b627f053affc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>af5c1f0397007110fba7b627f053affd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:12</sys_updated_on>
+        <value>status=Closed</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=675c1f0397007110fba7b627f053affc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>675c1f0397007110fba7b627f053affc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>2f5c1f0397007110fba7b627f053affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>675c1f0397007110fba7b627f053affc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>a75c1f0397007110fba7b627f053affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>675c1f0397007110fba7b627f053affc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>6b5c1f0397007110fba7b627f053affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=675c1f0397007110fba7b627f053affc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=675c1f0397007110fba7b627f053affc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</flow>
+        <order>6</order>
+        <parent_ui_id>e989d277-35f2-4884-8ced-eddd7d253b0d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>675c5f0397007110fba7b627f053af02</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <ui_id>c4d2cf87-5f70-43d4-a3e8-c07b8af83fd5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=675c5f0397007110fba7b627f053af02"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>675c5f0397007110fba7b627f053af02</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>635c5f0397007110fba7b627f053af04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>675c5f0397007110fba7b627f053af02</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>af5c5f0397007110fba7b627f053af03</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:12</sys_updated_on>
+        <value>status=cancelled</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=675c5f0397007110fba7b627f053af02"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>675c5f0397007110fba7b627f053af02</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>2f5c5f0397007110fba7b627f053af03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>675c5f0397007110fba7b627f053af02</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>a75c5f0397007110fba7b627f053af03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>675c5f0397007110fba7b627f053af02</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>6b5c5f0397007110fba7b627f053af03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=675c5f0397007110fba7b627f053af02"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=675c5f0397007110fba7b627f053af02"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>a75c1f0397007110fba7b627f053aff5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <ui_id>ba56a48e-500d-415b-b441-f43ee181a011</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a75c1f0397007110fba7b627f053aff5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a75c1f0397007110fba7b627f053aff5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>635c1f0397007110fba7b627f053aff8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <value>x_812225_lms_leave_request</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a75c1f0397007110fba7b627f053aff5</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>af5c1f0397007110fba7b627f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a75c1f0397007110fba7b627f053aff5</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>eb5c1f0397007110fba7b627f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a75c1f0397007110fba7b627f053aff5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>a75c1f0397007110fba7b627f053aff5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>a75c1f0397007110fba7b627f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{dcf2f80c-e2a4-4a5f-bd33-753b094af602.record.requested_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>a75c1f0397007110fba7b627f053aff5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>6f5c1f0397007110fba7b627f053aff6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>a75c1f0397007110fba7b627f053aff5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>e35c1f0397007110fba7b627f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a75c1f0397007110fba7b627f053aff5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>235c1f0397007110fba7b627f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>a75c1f0397007110fba7b627f053aff5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:06</sys_created_on>
+        <sys_id>6b5c1f0397007110fba7b627f053aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a75c1f0397007110fba7b627f053aff5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a75c1f0397007110fba7b627f053aff5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=835c1f0397007110fba7b627f053af94"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=835c1f0397007110fba7b627f053af94^sys_idNOT INd35c1f0397007110fba7b627f053afca,db5c1f0397007110fba7b627f053afc6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f13c1b0397007110fba7b627f053af61</block>
+        <comment/>
+        <connected_to>3e94d8e2-9f49-463e-9ba4-b8254a894e32</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>d35c1f0397007110fba7b627f053afca</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <ui_id>e989d277-35f2-4884-8ced-eddd7d253b0d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d35c1f0397007110fba7b627f053afca"/>
+    <sys_element_mapping action="delete_multiple" query="id=d35c1f0397007110fba7b627f053afca"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d35c1f0397007110fba7b627f053afca</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>9f5c1f0397007110fba7b627f053afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ba56a48e-500d-415b-b441-f43ee181a011.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d35c1f0397007110fba7b627f053afca"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d35c1f0397007110fba7b627f053afca"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fd3c1b0397007110fba7b627f053af49</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ISLLMS Flow">835c1f0397007110fba7b627f053af94</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>db5c1f0397007110fba7b627f053afc6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:13</sys_updated_on>
+        <ui_id>3e94d8e2-9f49-463e-9ba4-b8254a894e32</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=db5c1f0397007110fba7b627f053afc6"/>
+    <sys_element_mapping action="delete_multiple" query="id=db5c1f0397007110fba7b627f053afc6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>db5c1f0397007110fba7b627f053afc6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:05</sys_created_on>
+        <sys_id>1f5c1f0397007110fba7b627f053afc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ba56a48e-500d-415b-b441-f43ee181a011.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=db5c1f0397007110fba7b627f053afc6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=db5c1f0397007110fba7b627f053afc6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=835c1f0397007110fba7b627f053af94"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=835c1f0397007110fba7b627f053af94"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_835c1f0397007110fba7b627f053af94^sys_idNOT IN175c1f0397007110fba7b627f053afc0,4b5c1f0397007110fba7b627f053afb8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_835c1f0397007110fba7b627f053af94</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:04</sys_created_on>
+        <sys_id>175c1f0397007110fba7b627f053afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_835c1f0397007110fba7b627f053af94</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:04</sys_created_on>
+        <sys_id>4b5c1f0397007110fba7b627f053afb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-20 08:01:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_835c1f0397007110fba7b627f053af94"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_835c1f0397007110fba7b627f053af94"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_835c1f0397007110fba7b627f053af94"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>de96138397cc3110fba7b627f053afe2</sys_id>
+        <latest_snapshot>835c1f0397007110fba7b627f053af94</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch0-07-18-2023_07-26-2023_1029.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=de96138397cc3110fba7b627f053afe2^sys_idNOT IN046c5f0397007110fba7b627f053af67"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"046c5f0397007110fba7b627f053af67","name":"plan","plan_signature":null}}</plan>
+        <plan_id>de96138397cc3110fba7b627f053afe2</plan_id>
+        <snapshot>4cc097049761b110fba7b627f053af31</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-20 08:01:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>046c5f0397007110fba7b627f053af67</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>surya@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-23 13:02:14</sys_updated_on>
+        <trigger display_value="">406c5f0397007110fba7b627f053af65</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=de96138397cc3110fba7b627f053afe2"/>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>3</order>
+        <published_ref/>
+        <question display_value="Leave Type">b936973d9799f110fba7b627f053af7a</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>ravi@istreetlabs.com</sys_created_by>
+        <sys_created_on>2023-09-16 13:40:19</sys_created_on>
+        <sys_id>ca36973d9799f110fba7b627f053afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sick Leave</sys_name>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name>question_choice_ca36973d9799f110fba7b627f053afc0</sys_update_name>
+        <sys_updated_by>ravi@istreetlabs.com</sys_updated_by>
+        <sys_updated_on>2023-09-16 13:40:19</sys_updated_on>
+        <text>Sick Leave</text>
+        <value>sl</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=ca36973d9799f110fba7b627f053afc0"/>
+</record_update>

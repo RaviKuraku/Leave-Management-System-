@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_812225_lms.ISLLmsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ISLLmsAjax</name>
+        <script><![CDATA[var ISLLmsAjax = Class.create();
+ISLLmsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getDateDiff: function() {
+        var d1 = new GlideDate();
+        d1.setDisplayValue(this.getParameter('sysparm_start'));
+        var d2 = new GlideDate();
+        d2.setDisplayValue(this.getParameter('sysparm_end'));
+
+        var duration = GlideDate.subtract(d1, d2);
+        return duration.getNumericValue();
+    },
+	
+	getLeaveBucket: function() {
+//gs.addInfoMessage('inside getleave function 01');
+var emp=this.getParameter('sysparm_user');
+var xyz=this.getParameter('sysparm_leavetype');
+//gs.addInfoMessage('user combo:'+emp+'-'+xyz);
+        var gr = new GlideRecordSecure('x_812225_lms_leave_backet');
+        gr.addQuery('employee','=', emp.toString());
+        gr.addQuery('leave_type','=',xyz.toString());
+        gr.query();
+//gs.addInfoMessage('just queried 02 --> '+gr.getRowCount(),'SBK-LMS01');
+        if(gr.next()){
+//gs.addInfoMessage('inside IF 03','SBK-LMS02');
+            var leaveDetails = {};
+            leaveDetails.accrued = '' + gr.accrued;
+//gs.addInfoMessage('accrued: '+gr.accrued,'SBK-LMS02');
+            leaveDetails.balance = '' + gr.balance;
+leaveDetails.taken = '' + gr.taken;
+            return JSON.stringify(leaveDetails);
+        }
+    },
+
+ type: 'ISLLmsAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-17 12:22:49</sys_created_on>
+        <sys_id>775b341297443110fba7b627f053af32</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ISLLmsAjax</sys_name>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name>sys_script_include_775b341297443110fba7b627f053af32</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-18 15:13:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

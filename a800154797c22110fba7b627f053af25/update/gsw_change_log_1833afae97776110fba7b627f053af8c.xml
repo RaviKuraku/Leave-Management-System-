@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2023-07-06 08:58:15</change_date>
+        <changed_by display_value="Ravi KURAKU">b00eca782ff0a510716c9dacf699b612</changed_by>
+        <content display_value="ITSM Guided Setup">01c6e55c25513200964f48ca4b89e87a</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>raviteja.kuraku@gmail.com</sys_created_by>
+        <sys_created_on>2023-07-06 08:58:15</sys_created_on>
+        <sys_id>1833afae97776110fba7b627f053af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2023-07-06 08:58:15</sys_name>
+        <sys_package display_value="Leave Management System" source="x_812225_lms">a800154797c22110fba7b627f053af25</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">a800154797c22110fba7b627f053af25</sys_scope>
+        <sys_update_name>gsw_change_log_1833afae97776110fba7b627f053af8c</sys_update_name>
+        <sys_updated_by>raviteja.kuraku@gmail.com</sys_updated_by>
+        <sys_updated_on>2023-07-06 08:58:15</sys_updated_on>
+        <type>1</type>
+    </gsw_change_log>
+</record_update>
